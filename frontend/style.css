@@ -1,0 +1,99 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(145deg, #0f0f1a, #1b1b2f);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* Title */
+h1 {
+  color: #8a2be2;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #8a2be2;
+}
+
+/* Add/Edit Employee Form Container */
+.form-container {
+  background: rgba(255,255,255,0.05);
+  padding: 15px;
+  border-radius: 12px;
+  width: 85%;
+  margin: 0 auto 18px auto;
+  box-shadow: 0 0 15px rgba(138,43,226,0.35);
+}
+
+/* Form Layout */
+form {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+input, select, button {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+
+input, select {
+  background: rgba(255,255,255,0.1);
+  color: white;
+  min-width: 220px;
+}
+
+button {
+  background: #8a2be2;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 0 10px #8a2be2;
+  transition: 0.2s ease-in-out;
+}
+button:hover { background: #9b4dff; }
+
+/* Search Bar */
+.search-box {
+  width: 85%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  background: rgba(255,255,255,0.1);
+  color: white;
+  margin: 10px auto 18px auto;
+  display: block;
+}
+
+/* Table */
+table {
+  width: 85%;
+  margin: auto;
+  border-collapse: collapse;
+  background: rgba(255,255,255,0.05);
+  border-radius: 10px;
+  overflow: hidden;
+}
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  text-align: left;
+}
+th { background: rgba(138,43,226,0.3); }
+
+/* Action buttons */
+.action-btn {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  transition: 0.2s;
+  margin-right: 6px;
+}
+.edit-btn { background: #06b6d4; box-shadow: 0 0 8px #06b6d4; }
+.delete-btn { background: #e63946; box-shadow: 0 0 8px #e63946; }
+.edit-btn:hover { background: #08cde9; }
+.delete-btn:hover { background: #ff4d5a; }

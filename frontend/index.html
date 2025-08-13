@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Employee Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🚀 Employee Manager</h1>
+
+  <!-- Add/Edit Employee Form -->
+  <div class="form-container">
+    <form id="employeeForm">
+      <input type="text" id="name" placeholder="Name" required />
+      <input type="email" id="email" placeholder="Email (@gmail.com / @outlook.com)" required />
+      <select id="position" required>
+        <option value="">Select Position</option>
+        <option value="Intern">Intern</option>
+        <option value="Junior Developer">Junior Developer</option>
+        <option value="Developer">Developer</option>
+        <option value="Senior Developer">Senior Developer</option>
+        <option value="Designer">Designer</option>
+        <option value="HR">HR</option>
+        <option value="Manager">Manager</option>
+        <option value="Director">Director</option>
+      </select>
+      <button type="submit" id="submitBtn">Add Employee</button>
+    </form>
+  </div>
+
+  <!-- Live Search -->
+  <input type="text" id="search" placeholder="Search by name, email, or position..." class="search-box" />
+
+  <!-- Employees Table -->
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th><th>Email</th><th>Position</th><th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="employeeTableBody"></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
